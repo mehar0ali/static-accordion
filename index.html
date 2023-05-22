@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="accordion">
+        <div class="contentBx">
+            <div class="label">First List</div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa earum alias voluptatum recusandae. Deleniti amet sint natus beatae laborum, reiciendis tempora autem tempore quas officiis debitis tenetur odio officia velit quod inventore cum, obcaecati assumenda sit quaerat voluptatibus consectetur placeat id. Optio magni inventore esse dicta velit ducimus dolor! Sed.</p>
+            </div>
+        </div>
+
+        <div class="contentBx">
+            <div class="label">Second List</div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa earum alias voluptatum recusandae. Deleniti amet sint natus beatae laborum, reiciendis tempora autem tempore quas officiis debitis tenetur odio officia velit quod inventore cum, obcaecati assumenda sit quaerat voluptatibus consectetur placeat id. Optio magni inventore esse dicta velit ducimus dolor! Sed.</p>
+            </div>
+        </div>
+
+        <div class="contentBx">
+            <div class="label">Third List</div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa earum alias voluptatum recusandae. Deleniti amet sint natus beatae laborum, reiciendis tempora autem tempore quas officiis debitis tenetur odio officia velit quod inventore cum, obcaecati assumenda sit quaerat voluptatibus consectetur placeat id. Optio magni inventore esse dicta velit ducimus dolor! Sed.</p>
+            </div>
+        </div>
+
+        <div class="contentBx">
+            <div class="label">Fourth List</div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa earum alias voluptatum recusandae. Deleniti amet sint natus beatae laborum, reiciendis tempora autem tempore quas officiis debitis tenetur odio officia velit quod inventore cum, obcaecati assumenda sit quaerat voluptatibus consectetur placeat id. Optio magni inventore esse dicta velit ducimus dolor! Sed.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        const accordion = document.getElementsByClassName("contentBx");
+
+        for(i=0; i<accordion.length; i++){
+            accordion[i].addEventListener('click', function(){
+                this.classList.toggle('active')
+            })
+        }
+    </script>
+</body>
+</html>
